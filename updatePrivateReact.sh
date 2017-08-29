@@ -61,7 +61,7 @@ updateVersion()
 
     #替换新的版本号
     sed -i ' ' "s/$versionLine/s.version      = \"$newVersion\"/g" ./$1.podspec
-    rm ./$1.podspec\
+    rm ./$1.podspec\ 
 
     echo $newVersion
 }
@@ -80,6 +80,8 @@ verifyOperation " build Debug React 失败 " " build Debug React 成功 "
 verifyOperation " build Release React 失败 " " build Release React 成功 " 
 
 #更新版本号
+updateVersion React
+updateVersion React_debug
 updateVersion Yoga
 newVersion=`updateVersion Yoga_debug`
 
@@ -90,7 +92,7 @@ newVersion=`updateVersion Yoga_debug`
 #将改动推到远程仓库并创建新的分支
 git add .
 git commit -m "auto create new branch"
-git tag -a $newVersion -m  "React v$newVersion"
+git tag -a $newVersion -m  "React $newVersion"
 git push origin master
 verifyOperation "React创建新的tag => $newVersion 失败!!!"
 git push origin $newVersion
