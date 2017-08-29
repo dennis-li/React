@@ -68,10 +68,16 @@ updateVersion()
 
 #编译.a文件
 ./buildReact.sh Debug Yoga
-./buildReact.sh Release Yoga
-./buildReact.sh Debug React
-./buildReact.sh Release React
+verifyOperation " build Debug Yoga 失败 " " build Debug Yoga 成功 " 
 
+./buildReact.sh Release Yoga
+verifyOperation " build Release Yoga 失败 " " build Release Yoga 成功 " 
+
+./buildReact.sh Debug React
+verifyOperation " build Debug React 失败 " " build Debug React 成功 " 
+
+./buildReact.sh Release React
+verifyOperation " build Release React 失败 " " build Release React 成功 " 
 
 #更新版本号
 updateVersion Yoga
