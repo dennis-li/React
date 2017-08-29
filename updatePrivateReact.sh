@@ -49,7 +49,6 @@ createNewVersion()
 updateVersion()
 {
     #提取代码版本所在行
-    git pull origin master
     versionLine=`cat $1.podspec |grep -E 's.version(.*)='`
 
     #提取当前版本号
@@ -68,22 +67,24 @@ updateVersion()
 
 #编译.a文件
 ./buildReact.sh Debug Yoga
-verifyOperation " build Debug Yoga 失败 " " build Debug Yoga 成功 " 
+verifyOperation " build Debug Yoga 失败 " " build Debug Yoga 成功 "
 
 ./buildReact.sh Release Yoga
-verifyOperation " build Release Yoga 失败 " " build Release Yoga 成功 " 
+verifyOperation " build Release Yoga 失败 " " build Release Yoga 成功 "
 
 ./buildReact.sh Debug React
-verifyOperation " build Debug React 失败 " " build Debug React 成功 " 
+verifyOperation " build Debug React 失败 " " build Debug React 成功 "
 
 ./buildReact.sh Release React
-verifyOperation " build Release React 失败 " " build Release React 成功 " 
+verifyOperation " build Release React 失败 " " build Release React 成功 "
 
 #更新版本号
-updateVersion React
+git pull origin master
+newVersion=`updateVersion React`
 updateVersion React_debug
 updateVersion Yoga
-newVersion=`updateVersion Yoga_debug`
+updateVersion Yoga_debug
+
 
 #先验证Yoga的podspec
 #pod lib lint --allow-warnings --use-libraries  --sources=https://github.com/dennis-li/DennisRepos.git
