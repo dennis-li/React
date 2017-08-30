@@ -38,11 +38,7 @@ rm ./lib_i386_x86.a ./lib_armv7_arm64.a
 rm ./${target}${arch}/*.a
 rm ./${target}Include/*.h
 
-if [ "$1" == "Debug" ]; then
-        mv ./lib${target}.a ./${target}${arch}/lib${target}_debug.a
-else 
-	mv ./lib${target}.a ./${target}${arch}/lib${target}.a
-fi
+mv ./lib${target}.a ./${target}${arch}/lib${target}.a
 
 cp ${buildPath}/build/${arch}-iphoneos/$target/*.h ./${target}Include
 rm -rf ./build
