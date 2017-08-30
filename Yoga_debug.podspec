@@ -25,7 +25,7 @@ s.version      = "0.47.1.5"
 
  s.framework = 'SystemConfiguration'
  s.preserve_paths = 'YogaDebug'
- s.ios.vendored_libraries = 'YogaDebug/libYoga.a'
+ s.ios.vendored_libraries = 'YogaDebug/libYoga_debug.a'
 					         
  s.library = 'c++'
 

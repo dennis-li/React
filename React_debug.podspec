@@ -25,7 +25,7 @@ s.version      = "0.47.1.5"
 
  s.framework = 'SystemConfiguration'
  s.preserve_paths = 'ReactDebug'
- s.ios.vendored_libraries = 'ReactDebug/libReact.a'
+ s.ios.vendored_libraries = 'ReactDebug/libReact_debug.a'
 					         
  s.library = 'c++'
 
