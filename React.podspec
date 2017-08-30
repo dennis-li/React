@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "React"
-s.version      = "0.47.1.5"
+s.version      = "0.47.1.6"
   s.summary      = "React"
   s.description  = <<-DESC
 	                    React description.
