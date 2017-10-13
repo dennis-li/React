@@ -9,7 +9,7 @@
 
 #import <JavaScriptCore/JavaScriptCore.h>
 
-#import "RCTDefines.h"
+#import <React/RCTDefines.h>
 
 /**
  Translates a given exception into an NSError.

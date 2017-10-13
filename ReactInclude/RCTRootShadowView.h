@@ -7,7 +7,7 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import "RCTShadowView.h"
+#import <React/RCTShadowView.h>
 #import <yoga/YGEnums.h>
 
 @interface RCTRootShadowView : RCTShadowView

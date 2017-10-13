@@ -9,10 +9,10 @@
 
 #import <UIKit/UIKit.h>
 
-#import "RCTBorderStyle.h"
-#import "RCTComponent.h"
-#import "RCTPointerEvents.h"
-#import "RCTView.h"
+#import <React/RCTBorderStyle.h>
+#import <React/RCTComponent.h>
+#import <React/RCTPointerEvents.h>
+#import <React/RCTView.h>
 
 @protocol RCTAutoInsetsProtocol;
 

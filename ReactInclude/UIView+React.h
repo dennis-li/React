@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "RCTComponent.h"
+#import <React/RCTComponent.h>
 #import <yoga/YGEnums.h>
 
 @class RCTShadowView;

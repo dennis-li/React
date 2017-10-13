@@ -7,9 +7,9 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import "RCTInvalidating.h"
-#import "RCTViewManager.h"
-#import "RCTConvert.h"
+#import <React/RCTInvalidating.h>
+#import <React/RCTViewManager.h>
+#import <React/RCTConvert.h>
 
 @interface RCTConvert (RCTModalHostView)
 

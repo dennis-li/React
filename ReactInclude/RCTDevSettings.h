@@ -7,8 +7,8 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import "RCTBridge.h"
-#import "RCTDefines.h"
+#import <React/RCTBridge.h>
+#import <React/RCTDefines.h>
 
 @protocol RCTPackagerClientMethod;
 

@@ -9,8 +9,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "RCTComponent.h"
-#import "RCTConvert.h"
+#import <React/RCTComponent.h>
+#import <React/RCTConvert.h>
 
 @interface RCTConvert (UITabBarSystemItem)
 

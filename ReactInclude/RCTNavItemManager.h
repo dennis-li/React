@@ -7,8 +7,8 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import "RCTConvert.h"
-#import "RCTViewManager.h"
+#import <React/RCTConvert.h>
+#import <React/RCTViewManager.h>
 
 @interface RCTConvert (BarButtonSystemItem)
 

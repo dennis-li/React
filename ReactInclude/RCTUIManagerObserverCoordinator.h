@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "RCTViewManager.h"
+#import <React/RCTViewManager.h>
 
 /**
  * Allows to hook into UIManager internals. This can be used to execute code at
