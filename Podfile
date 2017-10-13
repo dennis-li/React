@@ -21,9 +21,14 @@ pod 'React', :path => './RNComponents/node_modules/react-native', :subspecs => [
     'Core',
     'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
     'BatchedBridge',
+    'RCTImage',
     'RCTText',
+    'RCTSettings',
     'RCTNetwork',
     'RCTWebSocket', # needed for debugging
+    'RCTActionSheet',
+    'ART',
+    'RCTCameraRoll',
     # Add any other subspecs you want to use in your project
   ]
   # Explicitly include Yoga if you are using RN >= 0.42.0
